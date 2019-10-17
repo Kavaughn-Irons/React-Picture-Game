@@ -1,19 +1,69 @@
 import React from "react";
 
+const containerStyle = {
+marginTop : '50px'
+}
+
+const imageStyle = {
+width : '300px',
+height : '300px' 
+}
+
 function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
-        varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
-        Etiam ut feugiat ex. Cras non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna
-        imperdiet ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras rutrum
-        ligula in tincidunt commodo. Morbi sit amet mollis orci, in tristique ex. Donec nec ornare
-        elit. Donec blandit est sed risus feugiat porttitor. Vestibulum molestie hendrerit massa non
-        consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et
-        malesuada fames ac ante ipsum primis in faucibus.
-      </p>
+    <div style={containerStyle} className="container">
+
+      <div className="row">
+
+        <div className="col-xl-4">
+        <img style={imageStyle} src="https://bit.ly/2V8ZWjE" alt='Game Image'></img>
+        </div>
+
+        <div className="col-xl-4">
+        <img style={imageStyle} src="https://bit.ly/2OrbCx5" alt='Game Image'></img>
+        </div>
+
+        <div className="col-xl-4">
+        <img style={imageStyle} src="https://bit.ly/2VeKzX8" alt='Game Image'></img>
+        </div>
+
+      </div>
+
+      <div className="row">
+
+        <div className="col-xl-4">
+
+        </div>
+
+        <div className="col-xl-4">
+
+        </div>
+
+        <div className="col-xl-4">
+
+        </div>
+
+      </div>
+
+      <div className="row">
+
+        <div className="col-xl-4">
+
+        </div>
+
+        <div className="col-xl-4">
+
+        </div>
+
+        <div className="col-xl-4">
+
+        </div>
+
+      </div>
+
+    </div>
+
     </div>
   );
 }
