@@ -93,7 +93,7 @@ objValue > 0 || lost === true ? this.setState({lost : true}) : this.setState({[n
 objValue > 0 || lost === true ? this.setState({lost : true}) : this.setState({score: newScore})
 newScore === 9 ? this.setState({gameState : 'Winner!'}) : console.log("might lose!")
 objValue > 0 && this.state.gameState !== 'Winner!' || lost === true && this.state.gameState !== 'Winner!' ? this.setState({gameState : 'Loser!'}) : console.log("still winning!")
-console.log(objValue)
+console.log(newValue)
 console.log(objName)
 
 
